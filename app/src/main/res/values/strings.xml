@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">BrainTrainer</string>
+    <string name="current_text">Текущий результат:</string>
+    <string name="max_text">Максимальный результат:</string>
+    <string name="play_again_text">Начать заново</string>
+</resources>

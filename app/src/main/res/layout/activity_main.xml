@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textViewCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/padding_inside_textview"
+        android:text="0 / 0"
+        android:gravity="center"
+        android:textSize="@dimen/text_size_options"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewTimer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="00:15"
+        android:gravity="center"
+        android:textColor="@android:color/holo_green_light"
+        android:padding="@dimen/padding_inside_textview"
+        android:textSize="@dimen/text_size_options"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/textViewQuestion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/textViewOption0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="test"
+        android:textSize="@dimen/text_size_options"/>
+
+
+    <TextView
+        android:id="@+id/textViewOption0"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="@dimen/padding_inside_textview"
+        android:textSize="@dimen/text_size_options"
+        android:textColor="@color/white"
+        android:background="@android:color/holo_blue_light"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/textViewOption2"
+        app:layout_constraintEnd_toStartOf="@id/textViewOption1"
+        android:onClick="onClickChooseAnswer"
+        android:tag="0"/>
+    <TextView
+        android:id="@+id/textViewOption1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="@dimen/padding_inside_textview"
+        android:textSize="@dimen/text_size_options"
+        android:textColor="@color/white"
+        android:background="@android:color/holo_green_light"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/textViewOption3"
+        app:layout_constraintStart_toEndOf="@id/textViewOption0"
+        android:onClick="onClickChooseAnswer"
+        android:tag="1"/>
+    <TextView
+        android:id="@+id/textViewOption2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="@dimen/padding_inside_textview"
+        android:textSize="@dimen/text_size_options"
+        android:textColor="@color/white"
+        android:background="@android:color/holo_orange_light"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/textViewOption3"
+        android:onClick="onClickChooseAnswer"
+        android:tag="2"/>
+    <TextView
+        android:id="@+id/textViewOption3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="@dimen/padding_inside_textview"
+        android:textSize="@dimen/text_size_options"
+        android:textColor="@color/white"
+        android:background="@android:color/holo_purple"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/textViewOption2"
+        android:onClick="onClickChooseAnswer"
+        android:tag="3"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
